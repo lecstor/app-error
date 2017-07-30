@@ -1,0 +1,28 @@
+{
+  "name": "@lecstor/app-error",
+  "version": "1.0.0",
+  "description": "Simple error handling",
+  "main": "index.js",
+  "author": "jason@lecstor.com",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": { "node": ">=6" },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^20.0.4"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
