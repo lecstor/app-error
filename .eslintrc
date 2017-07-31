@@ -1,0 +1,17 @@
+{
+  "extends": ["standard", "prettier"],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "curly": ["error", "all"],
+    "brace-style": ["error", "1tbs"],
+    "semi": [
+      "error",
+      "always",
+      {
+        "omitLastInOneLineBlock": true
+      }
+    ]
+  }
+}
