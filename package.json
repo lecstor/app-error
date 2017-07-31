@@ -1,8 +1,8 @@
 {
   "name": "@lecstor/app-error",
-  "version": "1.0.0",
-  "description": "Simple errors for microservices",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Simplify error handling in microservices",
+  "main": "lib/index.js",
   "author": "jason@lecstor.com",
   "license": "MIT",
   "scripts": {

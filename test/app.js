@@ -1,6 +1,6 @@
 const express = require("express");
 const requestP = require("request-promise-native");
-const { RemoteError } = require("../");
+const { RemoteError } = require("../lib/");
 
 const app = express();
 
