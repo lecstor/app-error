@@ -4,6 +4,13 @@
   "description": "Simplify error handling in microservices",
   "main": "lib/index.js",
   "author": "jason@lecstor.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lecstor/app-error.git"
+  },
+  "bugs": {
+    "url": "http://github.com/lecstor/app-error/issues"
+  },
   "license": "MIT",
   "scripts": {
     "test": "jest"
