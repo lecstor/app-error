@@ -44,7 +44,9 @@ console.log(response);
 const express = require("express");
 const requestP = require("request-promise-native");
 const bunyan = require("bunyan");
-const { RemoteError, bunyanSerializer } = require("@lecstor/app-error");
+const {
+  RemoteError, bunyanSerializer
+} = require("@lecstor/app-error");
 
 const buffer = new bunyan.RingBuffer({ limit: 10 });
 
@@ -59,15 +61,18 @@ const app = express();
  * and throws RemoteErrors
  */
 function createUser() {
-  return requestP.post({ uri: "http://localhost:4321/new-user" }).catch(err => {
-    throw RemoteError(err.error);
-  });
+  return requestP.post({ uri: "http://localhost:4321/new-user" })
+    .catch(err => {
+      throw RemoteError(err.error);
+    });
 }
 
 /**
  * our routes all end with a catch which calls `next`
  */
-app.post("/create-user", (req, res, next) => createUser().catch(next));
+app.post("/create-user", (req, res, next) =>
+  createUser().catch(next)
+);
 
 /**
  * our app includes an error handler which gets those `next` calls
